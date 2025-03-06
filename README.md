@@ -68,5 +68,5 @@ Acceder a `http://127.0.0.1:8000/` para ver la página principal con las opcione
 - Se recomienda probar todo antes de subir cambios a GitHub.
 
 ## Video de Presentación
-El video que muestra el funcionamiento del proyecto se encuentra en `incluir enlace aquí`.
+El video que muestra el funcionamiento del proyecto se encuentra en https://drive.google.com/file/d/1iOufqNWDJDav6mk1PXnzZs5_9cxUZrq9/view?usp=sharing
 
