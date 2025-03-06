@@ -6,7 +6,7 @@ Este proyecto es una aplicación web estilo blog donde los usuarios pueden regis
 ## Instalación y Configuración
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/playground.git
+   git clone https://github.com/MarianoBustamante/entrega_final.git
    cd playground
    ```
 2. Crear y activar un entorno virtual:
