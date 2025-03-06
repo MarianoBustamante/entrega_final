@@ -1,0 +1,14 @@
+{% extends 'cuentas/base.html' %}
+
+{% block content %}
+  <h1>Páginas</h1>
+  <ul>
+    {% for pagina in paginas %}
+      <li>
+        <a href="{% url 'editar_pagina' pagina.pk %}">{{ pagina.titulo }}</a> | 
+        <a href="{% url 'eliminar_pagina' pagina.pk %}">Eliminar</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'crear_pagina' %}">Crear Nueva Página</a>
+{% endblock %}

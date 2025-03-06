@@ -1,0 +1,37 @@
+{% extends 'cuentas/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Bandeja de Mensajes</h2>
+
+    <h4>Mensajes Recibidos</h4>
+    {% if mensajes_recibidos %}
+        <ul class="list-group">
+            {% for mensaje in mensajes_recibidos %}
+                <li class="list-group-item">
+                    <strong>De:</strong> {{ mensaje.emisor.username }} <br>
+                    <strong>Fecha:</strong> {{ mensaje.fecha_envio|date:"d/m/Y H:i" }} <br>
+                    <p>{{ mensaje.contenido }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No tienes mensajes recibidos.</p>
+    {% endif %}
+
+    <h4 class="mt-4">Mensajes Enviados</h4>
+    {% if mensajes_enviados %}
+        <ul class="list-group">
+            {% for mensaje in mensajes_enviados %}
+                <li class="list-group-item">
+                    <strong>Para:</strong> {{ mensaje.receptor.username }} <br>
+                    <strong>Fecha:</strong> {{ mensaje.fecha_envio|date:"d/m/Y H:i" }} <br>
+                    <p>{{ mensaje.contenido }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No has enviado mensajes aún.</p>
+    {% endif %}
+</div>
+{% endblock %}
